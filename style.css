@@ -22,7 +22,7 @@ section {
   width: 23%;
   margin: auto;
   position: relative;
-  height: 715px;
+  height: 730px;
   margin-bottom: 40px;
   border-style: double;
   border-color: white;
@@ -36,7 +36,7 @@ section h3 {
 
 section p {
   color: yellow;
-  font-size: 25px;
+  font-size: 18px;
   margin-bottom: 10px;
 }
 
@@ -64,8 +64,28 @@ section p {
 
 .averageChek {
   display: flex;
-  margin-bottom: 20px;
-  font-size: 19px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.release_date {
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.release_date p {
+  margin: auto;
+}
+
+.original_language {
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.original_language p {
+  margin: auto;
 }
 
 .averageChek p {
