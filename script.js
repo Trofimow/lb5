@@ -67,16 +67,25 @@ function initialize() {
     let average = document.createElement("p");
     let chek = document.createElement("input");
     let label = document.createElement("span");
+    let rel = document.createElement("p"); 
+    let release = document.createElement("div");
+    let lan = document.createElement("p"); 
+    let language = document.createElement("div");
+
 
     para.setAttribute("class", "overview");
     imgBox.setAttribute("class", "imgBox");
     chek.setAttribute("type", "checkbox");
     averageAndChek.setAttribute("class", "averageChek");
     chekAndLabel.setAttribute("class","checkBoxStyle");
+    release.setAttribute("class", "release_date");
+    language.setAttribute("class", "original_language");
 
     para.textContent = movie.overview;
     heading.textContent = movie.title;
-    average.textContent = movie.vote_average;
+    average.textContent = movie.release_date;
+    rel.textContent = movie.vote_average;
+    lan.textContent = movie.original_language;
     label.innerHTML = "Look later";
     
     image.src = objectURL;
@@ -87,7 +96,11 @@ function initialize() {
     imgBox.appendChild(image);
     section.appendChild(heading);
     section.appendChild(averageAndChek);
+    section.appendChild(release);
+    section.appendChild(language);
     averageAndChek.appendChild(average);
+    release.appendChild(rel);
+    language.appendChild(lan);
     averageAndChek.appendChild(chekAndLabel);
     chekAndLabel.appendChild(chek);
     chekAndLabel.appendChild(label);
